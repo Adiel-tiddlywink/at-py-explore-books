@@ -46,7 +46,12 @@ with open("YA_Books.csv", mode="r", encoding="utf-8") as bookfile:
             best_rated_book = row
 
         #longest page count < 2000 yr
-
+        pages = int(row[5])
+        if minyear < maxyear:
+            minyear = maxyear
+            longest_page_count = row
+            
     print(f"Most recent book: \n{mostrecentbook}")
     print(f"Worst rated book: \n{worst_rated_book}")
     print(f"Best rated book: \n{best_rated_book}")
+    print(f"Longest page count b4 2000: \n{longest_page_count}")
