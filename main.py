@@ -1,4 +1,5 @@
 import csv
+import streamlit as st
 #comma separating value
 
 with open("YA_Books.csv", mode="r", encoding="utf-8") as bookfile:
@@ -55,3 +56,6 @@ with open("YA_Books.csv", mode="r", encoding="utf-8") as bookfile:
     print(f"Worst rated book: \n{worst_rated_book}")
     print(f"Best rated book: \n{best_rated_book}")
     print(f"Longest page count b4 2000: \n{longest_page_count}")
+
+st.write("# Each category of recent, book rating, and page count:")
+window = st.slider("FEHEFHEH")
